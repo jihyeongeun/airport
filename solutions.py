@@ -132,7 +132,7 @@ def main():
                         action="store_true",
                         help="Enable debug prints")
 
-    args = parser.parse_args()
+    args = parser.parser_args()
     if args.verbose:
       logging.getLogger('').handlers = []
       logging.basicConfig(level=logging.DEBUG)
